@@ -7,7 +7,7 @@
         {{ $featured_image := (trim $featured_image "/") | absURL }}
         <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
           <a href="{{.Permalink}}" class="db grow">
-          {{ with .Resources.GetMatch ($featured_image) }}
+          {{ with .Resources.GetMatch (.Params.featured_image) }}
             {{ $thumb := .Resize "390x" }}
             <img src="{{ $thumb.Permalink }}" class="img" alt="{{ .Title }}">
           {{ end }}
