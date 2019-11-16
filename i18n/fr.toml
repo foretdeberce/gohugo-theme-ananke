@@ -2,13 +2,19 @@
 other = "Plus"
 
 [allTitle]
-other = "Tous les {{.Title }}"
+other = "Voir tous"
+
+[notFoundTitle]
+other = "Oops, désolé !"
+
+[taxonomyTitle]
+other = "Ci-dessous, les articles en rapport avec"
 
 [recentTitle]
 other = "{{.Title }} récents"
 
 [readMore]
-other = "lire plus"
+other = "Lire plus"
 
 [whatsInThis]
 other = "Ce qui est dans {{ .Type }}"
